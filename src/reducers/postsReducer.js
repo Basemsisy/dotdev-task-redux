@@ -1,11 +1,11 @@
 import { posts } from '../posts';
-import { GET_POST_ID } from '../actions/types';
+import { TOGGLE_LIKE } from '../actions/types';
 
 const INITIAL_STATE = { posts: posts }
 
 export default (state = INITIAL_STATE, action) => {
   switch(action.type) {
-    case GET_POST_ID:
+    case TOGGLE_LIKE:
       const posts = [...state.posts];
       let index = posts.findIndex(item => item.id === action.payload);
       let post = posts[index];

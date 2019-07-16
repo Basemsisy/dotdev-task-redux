@@ -1,1 +1,1 @@
-export const GET_POST_ID = 'get_post_id';
+export const TOGGLE_LIKE = 'toggle_like';

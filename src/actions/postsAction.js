@@ -1,7 +1,7 @@
-import { GET_POST_ID } from './types';
+import { TOGGLE_LIKE } from './types';
 export const handleLike = (id) => { 
   return {
-      type: GET_POST_ID,
+      type: TOGGLE_LIKE,
       payload: id
     }
 }
