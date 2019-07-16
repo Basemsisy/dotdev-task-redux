@@ -3,10 +3,10 @@
   display: grid;
   justify-content: center;
 }
-.list {
+/* .list {
   display: flex;
   margin-bottom: 20px
-}
+} */
 
 .post {
   border: 1px solid #ddd;

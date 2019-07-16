@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {handleLike} from '../actions/postsAction';
+import {toggleLik} from '../actions/postsAction';
 
 
 
 class UserActions extends Component {
+
   render() {
-    const { post, handleLike} = this.props;
+    const { post, toggleLik} = this.props;
     return (
       <div>
-        <button onClick={() => handleLike(post.id) }>
+        <button onClick={() => toggleLik(post.id) }>
           {post.liked ? "unlike" : "like"}
         </button>
       </div>
@@ -17,4 +18,4 @@ class UserActions extends Component {
   }
 }
 
-export default connect(null, {handleLike})(UserActions)
+export default connect(null, {toggleLik})(UserActions)
