@@ -17,8 +17,4 @@ class UserActions extends Component {
   }
 }
 
-const mapStateToProps = ({posts}) => {
-  return posts
-}
-
-export default connect(mapStateToProps, {handleLike})(UserActions)
+export default connect(null, {handleLike})(UserActions)
