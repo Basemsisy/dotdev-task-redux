@@ -1,11 +1,11 @@
 import React from 'react';
 import UserActions from './UserActions'
 
-export default function Post({post, handleLike}) {
+export default function Post({post}) {
   return (
     <div className="post">
       {post.name}
-      <UserActions post={post} handleLike={handleLike}/>
+      <UserActions post={post}/>
     </div>
   )
 }
